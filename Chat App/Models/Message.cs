@@ -16,7 +16,11 @@ namespace Chat_App.Models
 
         public string UserId { get; set; }
 
-        public virtual User User { get; set; }   
+        public virtual User User { get; set; }
 
+        public Message()
+        {
+            Date = DateTime.Now;
+        }
     }
 }
